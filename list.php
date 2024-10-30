@@ -44,9 +44,9 @@ if ($status_medlist == false || $status_condition == false) {
         <a class="navbar-brand" href="select.php">服薬記録画面へ</a>
         <br>
         <a class="navbar-brand" href="index2.php">効果持続時間確認画面へ</a>
-        <div class="navbar-header user-name">
+        <!-- <div class="navbar-header user-name">
             <p>ユーザー名：<?= $_SESSION['name'] ?>さん</p>
-        </div>
+        </div> -->
         <form class="logout-form" action="logout.php" method="post" onsubmit="return confirm('本当にログアウトしますか？');">
             <button type="submit" class="logout-button">ログアウト</button>
         </form>
@@ -79,8 +79,8 @@ if ($status_medlist == false || $status_condition == false) {
                         <td><?= htmlspecialchars($result['remark_user']) ?></td>
                         <td>
 
-                            <a href="select.php?id=<?= htmlspecialchars($result['id'], ENT_QUOTES, 'UTF-8') ?>">編集</a>
-                            <a href="delete.php?id=<?= htmlspecialchars($result['id'], ENT_QUOTES, 'UTF-8') ?>" onclick="return confirm('本当に削除しますか？')">削除</a>
+                            <a href="select.php?id=<?= htmlspecialchars($result['lid'], ENT_QUOTES, 'UTF-8') ?>">編集</a>
+                            <a href="delete.php?id=<?= htmlspecialchars($result['lid'], ENT_QUOTES, 'UTF-8') ?>" onclick="return confirm('本当に削除しますか？')">削除</a>
 
                         </td>
                     </tr>

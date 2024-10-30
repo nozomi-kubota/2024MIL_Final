@@ -62,6 +62,7 @@ if ($status_medlist == false || $status_condition == false) {
 
 
     <main>
+        <br>
         <h1>服薬の記録</h1>
         <form action="submit_prescription.php" method="post">
             <label for="mdate">服薬日:</label>

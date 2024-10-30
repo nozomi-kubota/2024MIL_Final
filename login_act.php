@@ -4,6 +4,7 @@ session_start();
 //POST値を受け取る
 $lid = $_POST['lid']; //lid
 $lpw = $_POST['lpw']; //lpw
+$_SESSION['user_id'] = $val['id']; // ユーザーIDをセッションに保存
 
 //1.  DB接続
 require_once('functions.php');
